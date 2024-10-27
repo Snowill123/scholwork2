@@ -28,13 +28,38 @@
         </div>
     </div>
 
-    <!-- Pop-up modal -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <p id="popup-text"></p>
+  <!-- Pop-up modal -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p id="popup-text"></p>
+
+        <div id="chat-container" style="display:none;">
+            <div id="messages" style="border: 1px solid #ccc; height: 200px; overflow-y: auto; margin-bottom: 10px;"></div>
+            <input id="message-input" placeholder="Type a message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <div id="goal-container" style="display:none;">
+            <input id="goal-input" placeholder="Enter your goal..." />
+            <button onclick="addGoal()">Add Goal</button>
+            <div id="goals" style="margin-top: 10px; border: 1px solid #ccc; padding: 10px;"></div>
+        </div>
+
+        <div id="myjourney-container" style="display:none;">
+            <p>Follow your mindfulness challenges here!</p>
+            <input id="challenge-input" placeholder="Enter your challenge..." />
+            <button onclick="addChallenge()">Add Challenge</button>
+            <div id="challenges" style="margin-top: 10px; border: 1px solid #ccc; padding: 10px;"></div>
+        </div>
+
+        <div id="innerjoy-container" style="display:none;">
+            <p>Positive Affirmations:</p>
+            <div id="innerjoy-content" style="margin-top: 10px; font-style: italic;"></div>
         </div>
     </div>
+</div>
+
 
     <script src="main scripts.js"></script>
 </body>
