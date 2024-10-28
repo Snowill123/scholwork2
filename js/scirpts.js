@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (storedUser && storedUser.username === username && storedUser.password === password) {
             alert('User login successful!');
-            window.location.href = "user-dashboard.html";
+            window.location.href = "main structure.html";
         } else {
             alert('Invalid username or password.');
         }
